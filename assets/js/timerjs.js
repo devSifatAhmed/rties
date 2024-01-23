@@ -15,18 +15,18 @@ $(iframe).click(function(){
 });
 
 // ভিডিও উপাদানের রেফারেন্স নিতে একটি ইভেন্ট লিস্টেনার যোগ করুন
-var videoElement = document.querySelector("iframe");
+// var videoElement = document.querySelector("iframe");
 // আপনার ভিডিও ইউটিউব এম্বেড কোডের ইউআরএল
-var embeddedVideoUrl = "https://www.youtube.com/watch?v=tU40ypO6Ohw&t";
+// var embeddedVideoUrl = "https://www.youtube.com/watch?v=tU40ypO6Ohw&t";
 // ভিডিও ইউআরএল সেট করুন
-videoElement.src = embeddedVideoUrl;
+// videoElement.src = embeddedVideoUrl;
 
-videoElement.addEventListener("load", function() {
-    var isVideoPlaying = !videoElement.paused;
+// videoElement.addEventListener("load", function() {
+//     var isVideoPlaying = !videoElement.paused;
     
-    if (isVideoPlaying) {
-        console.log("ভিডিও চলছে!");
-    } else {
-        console.log("ভিডিও আটকে আছে অথবা প্লে হয়নি।");
-    }
-});
+//     if (isVideoPlaying) {
+//         console.log("ভিডিও চলছে!");
+//     } else {
+//         console.log("ভিডিও আটকে আছে অথবা প্লে হয়নি।");
+//     }
+// });
