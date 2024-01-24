@@ -1,3 +1,20 @@
+$(document).ready(function () {
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+    $(".copyNumber").click(function () {
+        var numb = $(this).siblings("input").val();
+        Swal.fire(
+            {
+            position: "top",
+            icon: "success",
+            title: numb,
+            showConfirmButton: false,
+            timer: 1500
+        });
+    });
+});
+
 (function ($) {
     "use strict";
 
@@ -10,8 +27,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -21,7 +38,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -38,7 +55,7 @@
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
-    }, {offset: '80%'});
+    }, { offset: '80%' });
 
 
     // Calender
@@ -55,7 +72,7 @@
         items: 1,
         dots: true,
         loop: true,
-        nav : false
+        nav: false
     });
 
 
@@ -117,7 +134,7 @@
     //         responsive: true
     //     }
     // });
-    
+
 
 
     // // Single Line Chart
@@ -206,7 +223,6 @@
             responsive: true
         }
     });
-
-    
 })(jQuery);
+
 
